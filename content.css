@@ -1,0 +1,57 @@
+:root {
+  --tigercenter-skin--muted-color: #999;
+}
+
+/* Emphasize course titles, de-emphasize course numbers */
+
+.classTitle, .shopTitle {
+  font-weight: 500 !important;
+}
+
+td.name {
+  font-weight: bold;
+}
+
+.name .courseID {
+  font-weight: normal;
+  color: var(--tigercenter-skin--muted-color);
+}
+
+/* Hide status text */
+
+.status .open {
+  display: none;
+}
+
+.status .wait {
+  display: none;
+}
+
+.status .closed {
+  display: none;
+}
+
+/* De-emphasize capacity */
+
+.status span:nth-child(4) {
+  color: var(--tigercenter-skin--muted-color);
+}
+
+.status .open+br+span {
+  color: #65ab65;
+}
+
+.status .wait+br+span {
+  color: #bfbe6f;
+}
+
+.status .closed+br+span {
+  color: #bf6f6f;
+}
+
+
+/* Space checkbox better in class titles */
+
+.row input[type="checkbox"] {
+    margin-top: 4px;
+}
